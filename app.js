@@ -10,6 +10,7 @@ App({
       this.globalData.userInfo = wx.getStorageSync('userInfo');
       this.globalData.token = wx.getStorageSync('token');
     }).catch(() => {
+      console.log('登录失败')
       
     });
   },

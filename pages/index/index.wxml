@@ -14,7 +14,7 @@
       <text>{{item.name}}</text>
     </navigator>
   </view>
-  <view class="a-section a-brand">
+  <!-- <view class="a-section a-brand">
     <view class="h">
       <navigator url="../brand/brand">
         <text class="txt">品牌制造商直供</text>
@@ -34,8 +34,8 @@
         </navigator>
       </view>
     </view>
-  </view>
-  <view class="a-section a-new" wx:if="{{newGoods.length > 0}}">
+  </view> -->
+  <!-- <view class="a-section a-new" wx:if="{{newGoods.length > 0}}">
     <view class="h">
       <view>
         <navigator url="../newGoods/newGoods">
@@ -52,7 +52,7 @@
         </navigator>
       </view>
     </view>
-  </view>
+  </view> -->
   <view class="a-section a-popular" wx:if="{{hotGoods.length > 0}}">
     <view class="h">
       <view>
@@ -76,7 +76,7 @@
       </view>
     </view>
   </view>
-  <view class="a-section a-topic" wx:if="topics.length > 0">
+  <!-- <view class="a-section a-topic" wx:if="topics.length > 0">
     <view class="h">
       <view>
       <navigator url="../topic/topic" open-type="switchTab">
@@ -98,7 +98,7 @@
         </view>
       </scroll-view>
     </view>
-  </view>
+  </view> -->
   <view class="good-grid" wx:for="{{floorGoods}}" wx:key="{{item.id}}">
     <view class="h">
       <view>

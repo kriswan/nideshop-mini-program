@@ -17,7 +17,7 @@ Page({
   onShareAppMessage: function () {
     return {
       title: 'NideShop',
-      desc: '仿网易严选微信小程序商城',
+      desc: '梅花大药房',
       path: '/pages/index/index'
     }
   },
