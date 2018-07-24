@@ -1,5 +1,5 @@
 <view class="container">
-  <view class="profile-info" bindtap="goLogin">
+  <view class="profile-info" bindtap='goLogin'>
     <image class="avatar" src="{{userInfo.avatar}}"></image>
     <view class="info">
       <text class="name">{{userInfo.nickname}}</text>
@@ -78,3 +78,4 @@
 
   <!--<view class="logout" bindtap="exitLogin">退出登录</view>-->
 </view>
+<button open-type='getUserInfo' class="auth_btn" wx:if="{{!auth}}" bindgetuserinfo='bindgetuserinfo'></button>

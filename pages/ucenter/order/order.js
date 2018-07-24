@@ -9,6 +9,7 @@ Page({
     // 页面初始化 options为页面跳转所带来的参数
 
     this.getOrderList();
+
   },
   getOrderList(){
     let that = this;
@@ -21,9 +22,10 @@ Page({
       }
     });
   },
-  payOrder(){
+  payOrder(e){
+    var index = e.target.dataset.index
     wx.redirectTo({
-      url: '/pages/pay/pay',
+      url: '/pages/pay/pay?orderId=' + this.data.orderList[index].id + '&actual_price=' + this.data.orderList[index].actual_price,
     })
   },
   onReady:function(){

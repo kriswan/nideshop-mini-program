@@ -5,11 +5,12 @@ var app = getApp();
 
 Page({
   data: {
+    auth:false,
     userInfo: {}
   },
   onLoad: function (options) {
-    // 页面初始化 options为页面跳转所带来的参数
-    console.log(app.globalData)
+  // 页面初始化 options为页面跳转所带来的参数
+   console.log(app.globalData)
   },
   onReady: function () {
 
@@ -47,6 +48,13 @@ Page({
     }).catch((err) => {
       console.log(err)
     });
+  },
+  bindgetuserinfo(){
+    console.log("bindgetuserinfo")
+    this.setData({
+      auth: true
+    });
+    this.goLogin();
   },
   exitLogin: function () {
     wx.showModal({

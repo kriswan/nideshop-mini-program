@@ -150,3 +150,11 @@ page{
     color: #333;
     font-size: 30rpx;
 }
+.auth_btn{
+  position: fixed;
+  left: 0;
+  top:0;
+  right: 0;
+  bottom: 0;
+  opacity: 0; 
+}
